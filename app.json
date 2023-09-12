@@ -8,6 +8,7 @@
       "expo-router"
     ],
     "name": "Dabba",
-    "slug": "Dabba"
+    "slug": "Dabba",
+    "orientation": "portrait"
   }
 }
