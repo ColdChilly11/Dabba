@@ -18,6 +18,11 @@ const Signinpage = ({navigation}) => {
     // Navigate to the Signuppage
     navigation.navigate('Signuppage');
   };
+
+  const handleSignInPress = () => {
+    // Navigate to the Signuppage
+    navigation.navigate('Homepage');
+  };
   
   const image = require('../../../assets/images/BackGround.png');
 
@@ -127,7 +132,7 @@ const Signinpage = ({navigation}) => {
                 /><Text style={styles.remembertext}>Remember Me</Text>
             </View>
 
-            <Pressable style={styles.signinbutton} onPress={() => Alert.alert('Less Gooo!!!')}>
+            <Pressable style={styles.signinbutton} onPress={handleSignInPress}>
               <Text style={styles.signintext}>Sign In</Text>
             </Pressable>
 

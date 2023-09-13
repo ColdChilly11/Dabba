@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
-import Home from './index'; // Import your Home component
+import Index from './index';
 
 const App = () => {
   return (
