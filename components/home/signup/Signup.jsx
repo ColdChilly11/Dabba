@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, Button, Alert, Pressable } from 'react-native'
 import {LinearGradient} from 'expo-linear-gradient';
 import { SelectList } from 'react-native-dropdown-select-list'
@@ -14,9 +14,17 @@ import { Switch, TextInput } from 'react-native-gesture-handler';
 
 const Signuppage = ({navigation}) => {
 
+  const [userAuthenticated, setUserAuthenticated] = useState("");
+
   const handleSignInPress = () => {
     // Navigate to the Signinpage
     navigation.navigate('Signinpage');
+  };
+
+  const handleSignUpPress = () => {
+    // Navigate to the Signuppage
+    navigation.navigate('MainStackScreen');
+    setUserAuthenticated(true);
   };
   
   const image = require('../../../assets/images/BackGround(signup).png');
@@ -120,7 +128,7 @@ const Signuppage = ({navigation}) => {
           
           </View>
 
-            <Pressable style={styles.signinbutton} onPress={() => Alert.alert('Less Gooo!!!')}>
+            <Pressable style={styles.signinbutton} onPress={handleSignUpPress}>
               <Text style={styles.signintext}>Sign Up</Text>
             </Pressable>
 

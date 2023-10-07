@@ -5,7 +5,6 @@ import {LinearGradient} from 'expo-linear-gradient';
 import styles from './Tradepage.style'
 import { ImageBackground } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Menu from '../menu/Menu';
 
 const Tradepage = () => {
 
@@ -21,9 +20,6 @@ const Tradepage = () => {
                 <Text style={{color: 'white'}}>Trade</Text>
             </View>
         </View>
-            <View>
-                <Menu />
-            </View>
         </SafeAreaView>
     )
 }

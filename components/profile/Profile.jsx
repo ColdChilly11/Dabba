@@ -9,21 +9,18 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Profilepage = () => {
 
-    // const image = require('../../../assets/images/HomeBackground.png');
+    const image = require('../../assets/images/HomeBackground.png');
 
     return (
         <SafeAreaView>
         <View style={styles.homepageview}>
-            {/* <ImageBackground
+            <ImageBackground
               round source={image} resizeMode="cover" style={styles.image}>
-            </ImageBackground> */}
+            </ImageBackground>
 
             <View>
-                <Text style={{color: 'white'}}>Home</Text>
+                <Text style={{color: 'white'}}>Profile</Text>
             </View>
-        </View>
-        <View>
-            <Menu />
         </View>
         </SafeAreaView>
     )

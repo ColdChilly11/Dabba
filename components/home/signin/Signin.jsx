@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, Button, Alert, Pressable } from 'react-native'
 import {LinearGradient} from 'expo-linear-gradient';
 import { SelectList } from 'react-native-dropdown-select-list'
@@ -14,6 +14,8 @@ import { Switch, TextInput } from 'react-native-gesture-handler';
 
 const Signinpage = ({navigation}) => {
 
+  const [userAuthenticated, setUserAuthenticated] = useState("");
+
   const handleSignUpPress = () => {
     // Navigate to the Signuppage
     navigation.navigate('Signuppage');
@@ -21,7 +23,8 @@ const Signinpage = ({navigation}) => {
 
   const handleSignInPress = () => {
     // Navigate to the Signuppage
-    navigation.navigate('Homepage');
+    navigation.navigate('MainStackScreen');
+    setUserAuthenticated(true);
   };
   
   const image = require('../../../assets/images/BackGround.png');

@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions, Animated } from "react-native";
 
-import { COLORS, FONT, SIZES } from "../../constants";
+import { COLORS, FONT, SIZES } from "../../../../constants";
 
 const screenHeight = Dimensions.get('window').height;
 const screenWidth = Dimensions.get('window').width;
@@ -166,15 +166,6 @@ const styles = StyleSheet.create({
   verticalAlign: "middle",
   // backgroundColor: 'red',
   },
-  fundstextpos: {
-    color: 'white',
-    fontWeight: "bold",
-    fontSize: 21,
-    textAlignVertical: 'center',
-    textAlign: "left",
-    verticalAlign: "middle",
-    // backgroundColor: 'red',
-    },
   marketlimit: {
     // backgroundColor: 'red',
     width: '100%',
@@ -204,12 +195,14 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   boxes: {
+    height: '100%',
+    width: '45%',
     marginHorizontal: 10,
-    height: '70%',
+    height: '100%',
     width: '45%',
     // backgroundColor: 'red',
     marginHorizontal: 10,
-    borderRadius: 18,
+    borderRadius: 8,
     borderColor: '#626363',
     opacity: 1,
     borderWidth: 2,
@@ -291,14 +284,22 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     textAlignVertical: 'center',
-    padding: 7,
+    padding: 10,
+  },
+  boxesbuytext: {
+    color: 'white',
+    // backgroundColor: 'red',
+    fontWeight: 'bold',
+    fontSize: 15,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    padding: 10,
   },
   boxestext2: {
     color: 'white',
-    width: '70%',
-    alignSelf: 'center',
+    width: '50%',
     // backgroundColor: 'red',
-    padding: 0,
+    padding: 3,
     fontSize: 15,
     textAlign: 'center',
   },
@@ -318,157 +319,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 18,
   },
-  positiontextview: {
-    width: '90%',
-    // backgroundColor: 'green',
-    alignSelf: 'center',
-    marginTop: 40,
-
-  },
-  filteredstockview: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    marginTop: 20,
-    width: '90%',
-    height: '50%',
-    alignSelf: 'center',
-    // backgroundColor: 'yellow',
-  },
-  filtered: {
-    height: '30%',
-    width: '45%',
-    // backgroundColor: 'red',
-    marginHorizontal: 10,
-    borderRadius: 15,
-    borderColor: '#626363',
-    opacity: 1,
-    borderWidth: 2,
-    backgroundColor: "rgba(238, 238, 238, 0.1)",
-    shadowColor: "rgba(0, 0, 0, 0.1)",
-    shadowOffset: {
-    width: 0,
-    height: 0,
-    shadowOpacity: 1,}
-  },
-  filteredtext: {
-    color: 'white',
-    // backgroundColor: 'red',
-    padding: 10,
-    fontWeight: 'bold',
-    fontSize: 15,
-  },
-  fundsview: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '90%',
-    height: '30%',
-    alignSelf: 'center',
-    marginTop: -167,
-    // backgroundColor: 'blue',
-  },
-  fundstextview: {
-    display: 'flex',
-    height: '30%',
-    // backgroundColor: 'green',
-  },
-  fundstext: {
-  color: 'white',
-  fontWeight: "bold",
-  fontSize: 18,
-  textAlignVertical: 'center',
-  textAlign: "left",
-  verticalAlign: "middle",
-  // backgroundColor: 'red',
-  },
-  fundsboxes: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    height: '70%',
-    width: '100%',
-  },
-  searchbarview: {
-    width: '90%',
-    top: '0%',
-    alignSelf: 'center',
-    // backgroundColor: 'blue',
-  },
-  searchbar: {
-    borderRadius: 20,
-    borderColor: '#626363',
-    opacity: 1,
-    borderWidth: 2,
-    backgroundColor: "transparent",
-    shadowColor: "rgba(0, 0, 0, 0.1)",
-    shadowOffset: {
-    width: 0,
-    height: 0,
-    shadowOpacity: 1,
-    },
-  },
-  martketHscroll: {
-    width: '100%',
-    height: '10%',
-    marginTop: 20,
-    // backgroundColor: 'blue',
-  },
-  marketoption1: {
-    height: '80%',
-    width: 100,
-    marginHorizontal: 10,
-    // backgroundColor: 'red',
-    marginHorizontal: 9,
-    borderRadius: 10,
-    borderColor: '#626363',
-    opacity: 1,
-    borderWidth: 2,
-    backgroundColor: "rgba(238, 238, 238, 0.1)",
-    shadowColor: "rgba(0, 0, 0, 0.1)",
-    shadowOffset: {
-    width: 0,
-    height: 0,
-    shadowOpacity: 1,}
-  },
-  marketoptiontext: {
-    color: 'white',
-    // backgroundColor: 'red',
-    padding: 9,
-    fontWeight: '500',
-    fontSize: 15,
-    textAlign: 'center',
-  },
-  martketHscroll2: {
-    width: '100%',
-    height: screenHeight,
-    display: 'flex',
-    marginTop: 20,
-    // backgroundColor: 'green',
-  },
-  marketstocksview: {
-    width: '100%',
-    height: '81%',
-    display: 'flex',
-    marginTop: 20,
-    backgroundColor: 'green',
-  },
-  marketstock1: {
-    width: '100%',
-    height: '81%',
-    marginHorizontal: 10,
-    // backgroundColor: 'red',
-    marginHorizontal: 9,
-    borderRadius: 10,
-    borderColor: '#626363',
-    opacity: 1,
-    borderWidth: 2,
-    backgroundColor: "rgba(238, 238, 238, 0.1)",
-    shadowColor: "rgba(0, 0, 0, 0.1)",
-    shadowOffset: {
-    width: 0,
-    height: 0,
-    shadowOpacity: 1,}
-  },
+  
 
 });
 
